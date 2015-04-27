@@ -14,10 +14,10 @@ class AclView extends AdminView
      */
     function index($data)
     {
-        if (! empty($data['menu_list'])) {
+        if (!empty($data['menu_list'])) {
             $this->renderTpl('acl/index', $data['menu_list']);
         } else {
-            $this->notice(100026);
+            $data['status'] = 100026;
         }
     }
 
@@ -28,10 +28,10 @@ class AclView extends AdminView
      */
     function editMenu($data)
     {
-        if (! empty($data['menu_list'])) {
+        if (!empty($data['menu_list'])) {
             $this->renderTpl('acl/menu_manager', array($data['menu_list']));
         } else {
-            $this->notice(100026);
+            $data['status'] = 100026;
         }
     }
 
@@ -52,10 +52,6 @@ class AclView extends AdminView
      */
     function addRole($data)
     {
-        if (!empty($data ['notes'])) {
-            $this->notice($data['notes']);
-        }
-
         $menu_list = $data ['menu_list'];
         include $this->tpl("acl/add_role");
     }

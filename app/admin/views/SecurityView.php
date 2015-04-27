@@ -16,8 +16,6 @@ class SecurityView extends AdminView
     {
         if ($data['status'] == 1) {
             self::_print($data['card']);
-        } else {
-            $this->notice($data['status']);
         }
     }
 
