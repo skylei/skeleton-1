@@ -81,9 +81,6 @@ class AclView extends AdminView
      */
     function roleList($data)
     {
-        if (!empty($data ['notes'])) {
-            $this->notes($data['notes']);
-        }
         include $this->tpl("acl/role_list");
     }
 
