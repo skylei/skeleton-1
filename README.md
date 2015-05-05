@@ -7,7 +7,7 @@
 
 	git clone https://git.oschina.net/ideaa/skeleton.git
 
-[使用composer安装](doc/composer.md "使用composer安装") [使用压缩包安装](doc/source.md "使用压缩包安装")
+[使用composer安装](docs/composer.md "使用composer安装") [使用压缩包安装](docs/source.md "使用压缩包安装")
 
 待安装完后, 通过浏览器输入地址 `http://127.0.0.1/skeleton/htdocs/web` 来访问默认的web页面   
 
